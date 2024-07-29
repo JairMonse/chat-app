@@ -21,10 +21,10 @@ const Register = () => {
         >
           <Col xs={6}>
             <Stack gap={3}>
-              <h2>Register</h2>
+              <h2>Registrarse</h2>
               <Form.Control
                 type="text"
-                placeholder="Name"
+                placeholder="Nombre"
                 onChange={(e) =>
                   updateRegisterInfo({ ...registerInfo, name: e.target.value })
                 }
@@ -38,7 +38,7 @@ const Register = () => {
               />
               <Form.Control
                 type="password"
-                placeholder="Password"
+                placeholder="Contraseña"
                 onChange={(e) =>
                   updateRegisterInfo({
                     ...registerInfo,
@@ -47,7 +47,7 @@ const Register = () => {
                 }
               />
               <Button variant="primary" type="submit">
-                {isRegisterLoading ? "Creating your account" : "Register"}
+                {isRegisterLoading ? "Creating your account" : "Registrarse"}
               </Button>
               {registerError?.error && (
                 <Alert variant="danger">

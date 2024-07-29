@@ -13,6 +13,7 @@ const Login = () => {
             height: "100vh",
             justifyContent: "center",
             paddingTop: "10%",
+            
           }}
         >
           <Col xs={6}>
@@ -20,20 +21,20 @@ const Login = () => {
               <h2>Login</h2>
               <Form.Control
                 type="email"
-                placeholder="Email"
+                placeholder="Correo"
                 onChange={(e) =>
                   updateLoginInfo({ ...loginInfo, email: e.target.value })
                 }
               />
               <Form.Control
                 type="password"
-                placeholder="Password"
+                placeholder="Contraseña"
                 onChange={(e) =>
                   updateLoginInfo({ ...loginInfo, password: e.target.value })
                 }
               />
               <Button variant="primary" type="submit">
-                {isLoginLoading? "Iniciando sesion...": "Login"}
+                {isLoginLoading? "Iniciando sesion...": "Ingresar"}
               </Button>
               {loginError?.error && (
                 <Alert variant="danger">

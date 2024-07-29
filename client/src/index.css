@@ -3,7 +3,11 @@
 body{
     color: white;
     font-family: "Nunito", sans-serif;
-    background: rgb(40, 40, 40);
+    /*background: rgb(40, 40, 40);*/
+    background-image: url('./assets/background_chat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
 }
 
 /* All users */

@@ -16,7 +16,7 @@ const NavBar = () => {
           </Link>
         </h2>
         {user && (
-          <span className="text-warning">Logged in as {user?.name}</span>
+          <span className="text-warning">Bienvenido: {user?.name}</span>
         )}
         <Nav>
           <Stack direction="horizontal" gap={3}>
@@ -28,7 +28,7 @@ const NavBar = () => {
                   to="/login"
                   className="link-light text-decoration-none"
                 >
-                  Logout
+                  Salir
                 </Link>
               </>
             )}
@@ -41,7 +41,7 @@ const NavBar = () => {
                   to="/register"
                   className="link-light text-decoration-none"
                 >
-                  Register
+                  Registrarse
                 </Link>
               </>
             )}
